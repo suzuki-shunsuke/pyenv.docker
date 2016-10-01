@@ -3,7 +3,7 @@ RUN apt-get update && \
     apt-get install -y make build-essential libssl-dev zlib1g-dev \
         libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
         libncurses5-dev libncursesw5-dev xz-utils git bash && \
-    useradd -m -u 1000 debian && \
+    useradd -m -u 900 debian && \
     rm -rf /var/lib/apt/lists/*
 WORKDIR /home/debian
 COPY .bash_profile /home/debian/
